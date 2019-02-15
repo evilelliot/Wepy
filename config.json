@@ -1,0 +1,10 @@
+{
+	"appname": "wepy",
+	"version": "1.2.0",
+
+	"apiurl": "http://api.openweathermap.org/data/2.5/weather?q=",
+	"apikey": "4f7d76bf608612dbb08fe158e0847c46",
+	"city": "Brighton",
+	"countrycode": "uk"
+	
+}

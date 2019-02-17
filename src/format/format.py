@@ -7,8 +7,11 @@ class Format:
 		self.ready  = self.ParseToArray()
 
 	def ParseToArray(self):
-		data = json.loads(self.data)
-		return data
+		if self.data == "error:404":
+			print("Error: config.json not found!")
+		else:
+			data = json.loads(self.data)
+			return data
 	
 	def GetItem(self, section, wich):	
 		return self.ready[section][wich]
@@ -21,3 +24,4 @@ class Format:
 
 	def unixt(self, unix):
 		return datetime.fromtimestamp(int(unix)).strftime('%Y-%m-%d %H:%M:%S')
+	
